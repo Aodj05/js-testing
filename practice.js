@@ -4,4 +4,10 @@ function cap(string) {
   return fc + string.slice(1);
 }
 
-module.exports = cap;
+function reverseString(string) {
+  return string.split("").reverse().join('');
+}
+
+module.exports = { cap,
+	reverseString
+};
