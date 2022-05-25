@@ -3,7 +3,8 @@ const cap = practice.cap;
 const reverseString = practice.reverseString;
 const calc = practice.calc;
 const cipher =  practice.cipher;
-const array = practice.object;
+const analyzeArray = practice.analyzeArray
+const array =analyzeArray([1,8,3,4,2,6]);
 
 test('first letter captitalized', () => {
   expect(cap("justin")).toBe("Justin");
@@ -42,5 +43,17 @@ test('cipher shifts with symbols', () => {
 });
 
 test('Array is averaged', () => {
-  expect(array.object['average']).toBe(4);
+  expect(array['average']).toBe(4);
+});
+
+test('Array min', () => {
+  expect(array['min']).toBe(1);
+});
+
+test('Array max', () => {
+  expect(array['max']).toBe(8);
+});
+
+test('Array length', () => {
+  expect(array['length']).toBe(6);
 });
