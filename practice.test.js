@@ -4,7 +4,6 @@ test('first letter captitalized', () => {
   expect(cap("justin")).toBe("Justin");
 });
 
-test('reversed string', () => {
-	expect(cap("justin")).toBe("nitsuj");
-})
-
+test('reverse a string', () => {
+  expect(reverseString("justin")).toBe("nitsuj");
+});
